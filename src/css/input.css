@@ -61,7 +61,7 @@
     }
 
     .solid-button-dark {
-        @apply bg-dark-green py-2 px-5 flex justify-center items-center text-light-green uppercase font-semibold rounded-[10px];
+        @apply bg-dark-green py-[18px] lg:py-2 px-5 flex justify-center items-center text-light-green uppercase font-semibold rounded-[10px];
     }
 
     .solid-button-tall {
