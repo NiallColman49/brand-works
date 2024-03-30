@@ -1154,6 +1154,10 @@ html {
   padding-top: 3.5rem;
 }
 
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1392,6 +1396,10 @@ html {
 
   .lg\:gap-\[60px\] {
     gap: 60px;
+  }
+
+  .lg\:gap-5 {
+    gap: 1.25rem;
   }
 
   .lg\:gap-y-6 {
