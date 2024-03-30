@@ -5,8 +5,8 @@
 @layer base {
     @font-face {
         font-family: 'Gill Sans';
-        src: url('../assets/fonts/gill-sans/GillSans.woff2') format('woff2'),
-            url('../assets/fonts/gill-sans/GillSans.woff') format('woff');
+        src: url('../fonts/gill-sans/GillSans.woff2') format('woff2'),
+            url('../fonts/gill-sans/GillSans.woff') format('woff');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
@@ -14,9 +14,8 @@
 
     @font-face {
         font-family: 'Gill Sans';
-        src: url('../assets/fonts/gill-sans/GillSans-Medium.woff2')
-                format('woff2'),
-            url('../assets/fonts/gill-sans/GillSans-Medium.woff') format('woff');
+        src: url('../fonts/gill-sans/GillSans-Medium.woff2') format('woff2'),
+            url('../fonts/gill-sans/GillSans-Medium.woff') format('woff');
         font-weight: 500;
         font-style: normal;
         font-display: swap;
@@ -24,9 +23,8 @@
 
     @font-face {
         font-family: 'Gill Sans';
-        src: url('../assets/fonts/gill-sans/GillSans-Bold.woff2')
-                format('woff2'),
-            url('../assets/fonts/gill-sans/GillSans-Bold.woff') format('woff');
+        src: url('../fonts/gill-sans/GillSans-Bold.woff2') format('woff2'),
+            url('../fonts/gill-sans/GillSans-Bold.woff') format('woff');
         font-weight: bold;
         font-style: normal;
         font-display: swap;
@@ -34,9 +32,8 @@
 
     @font-face {
         font-family: 'Gill Sans';
-        src: url('../assets/fonts/gill-sans/GillSans-Light.woff2')
-                format('woff2'),
-            url('../assets/fonts/gill-sans/GillSans-Light.woff') format('woff');
+        src: url('../fonts/gill-sans/GillSans-Light.woff2') format('woff2'),
+            url('../fonts/gill-sans/GillSans-Light.woff') format('woff');
         font-weight: 300;
         font-style: normal;
         font-display: swap;
@@ -44,9 +41,8 @@
 
     @font-face {
         font-family: 'Gill Sans';
-        src: url('../assets/fonts/gill-sans/GillSans-Heavy.woff2')
-                format('woff2'),
-            url('../assets/fonts/gill-sans/GillSans-Heavy.woff') format('woff');
+        src: url('../fonts/gill-sans/GillSans-Heavy.woff2') format('woff2'),
+            url('../fonts/gill-sans/GillSans-Heavy.woff') format('woff');
         font-weight: 900;
         font-style: normal;
         font-display: swap;
@@ -57,15 +53,15 @@
     }
 
     .solid-button {
-        @apply bg-light-green py-2 px-5 flex justify-center items-center text-dark-green uppercase font-semibold rounded-[10px];
+        @apply bg-light-green border-2 border-light-green py-1 px-5 flex justify-center items-center text-dark-green uppercase font-semibold rounded-[10px] hover:bg-dark-green hover:text-light-green hover:border-light-green;
     }
 
     .solid-button-dark {
-        @apply bg-dark-green py-[18px] lg:py-2 px-5 flex justify-center items-center text-light-green uppercase font-semibold rounded-[10px];
+        @apply bg-dark-green border-2 border-dark-green py-[14px] lg:py-2 px-5 flex justify-center items-center text-light-green uppercase font-semibold rounded-[10px] hover:bg-light-green hover:text-dark-green hover:border-dark-green;
     }
 
     .solid-button-tall {
-        @apply bg-light-green py-[18px] px-5 flex justify-center items-center text-dark-green uppercase font-semibold rounded-[10px];
+        @apply bg-light-green border-2 border-light-green py-[14px] px-5 flex justify-center items-center text-dark-green uppercase font-semibold rounded-[10px] hover:bg-dark-green  hover:text-light-green hover:border-light-green;
     }
 }
 
