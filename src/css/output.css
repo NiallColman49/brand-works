@@ -1039,6 +1039,10 @@ html {
   border-width: 2px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-t {
   border-top-width: 1px;
 }
@@ -1051,6 +1055,11 @@ html {
 .border-light-green {
   --tw-border-opacity: 1;
   border-color: rgb(198 217 44 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-dark-green {
@@ -1116,6 +1125,10 @@ html {
 
 .p-11 {
   padding: 2.75rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-2 {
@@ -1266,6 +1279,10 @@ html {
   font-weight: 600;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1280,6 +1297,10 @@ html {
 
 .leading-\[40px\] {
   line-height: 40px;
+}
+
+.leading-\[26px\] {
+  line-height: 26px;
 }
 
 .tracking-\[0\.3em\] {
@@ -1392,6 +1413,14 @@ html {
     height: 160px;
   }
 
+  .lg\:h-\[790px\] {
+    height: 790px;
+  }
+
+  .lg\:min-h-\[790px\] {
+    min-height: 790px;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -1414,6 +1443,14 @@ html {
 
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:w-\[59\%\] {
+    width: 59%;
+  }
+
+  .lg\:w-\[57\%\] {
+    width: 57%;
   }
 
   .lg\:grid-cols-12 {
@@ -1484,6 +1521,10 @@ html {
     padding: 2.75rem;
   }
 
+  .lg\:p-10 {
+    padding: 2.5rem;
+  }
+
   .lg\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -1549,6 +1590,10 @@ html {
 
   .lg\:pt-\[70px\] {
     padding-top: 70px;
+  }
+
+  .lg\:pt-11 {
+    padding-top: 2.75rem;
   }
 
   .lg\:text-\[44px\] {
