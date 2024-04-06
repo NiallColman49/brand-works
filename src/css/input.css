@@ -63,6 +63,10 @@
     .solid-button-tall {
         @apply bg-light-green border-2 border-light-green py-[14px] px-5 flex justify-center items-center text-dark-green uppercase font-semibold rounded-[10px] hover:bg-dark-green  hover:text-light-green hover:border-light-green;
     }
+
+    .outline-button {
+        @apply border-2 border-light-green py-1 px-5 flex justify-center items-center text-light-green uppercase font-semibold rounded-[10px] hover:bg-light-green hover:text-dark-green hover:border-light-green;
+    }
 }
 
 .track {
