@@ -3,7 +3,934 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>vehicle Branding</title>
+        <title>Vehicle Branding</title>
+        <link href="./src/css/output.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/b838f5a310.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
-    <body></body>
+
+    <body class="overflow-x-hidden">
+        <!-- Top cta section - light green with socials and contact details -->
+        <section class="bg-light-green py-2">
+            <div class="container">
+                <div
+                    class="flex flex-wrap items-center justify-between gap-4 lg:gap-0"
+                >
+                    <div class="hidden lg:flex gap-4">
+                        <a
+                            href="https://www.facebook.com/districtsignco"
+                            target="_blank"
+                            class="flex items-center"
+                        >
+                            <i
+                                class="fa-brands fa-facebook text-dark-green text-lg"
+                            ></i>
+                        </a>
+
+                        <a
+                            href="https://www.instagram.com/brandworksuk/"
+                            target="_blank"
+                            class="flex items-center"
+                        >
+                            <i
+                                class="fa-brands fa-instagram text-dark-green text-xl"
+                            ></i>
+                        </a>
+
+                        <a
+                            href="https://uk.linkedin.com/company/brand.works"
+                            target="_blank"
+                            class="flex items-center"
+                        >
+                            <i
+                                class="fa-brands fa-linkedin text-dark-green text-xl"
+                            ></i>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <a
+                            href="tel:0113 123 456"
+                            target="_self"
+                            class="flex gap-2 items-center text-dark-green"
+                        >
+                            <i class="fa-solid fa-phone"></i>
+                            <span class="pt-1">0113 123 456</span>
+                        </a>
+                        <a
+                            href="mailto:hello@brand-works.co.uk"
+                            target="_self"
+                            class="flex gap-2 items-center text-dark-green"
+                        >
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="pt-1">hello@brandworks.co.uk</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main navigation with page links and logo -->
+        <section class="bg-dark-green py-4 hidden lg:block">
+            <div class="container">
+                <div class="flex flex-wrap items-center lg:justify-between">
+                    <a href="/" class="w-full lg:w-1/3">
+                        <img
+                            src="./src/assets/logo/brand-works-logo.svg"
+                            alt="Brand Works Logo"
+                        />
+                    </a>
+
+                    <div
+                        class="w-full lg:w-1/2 flex gap-4 lg:gap-10 lg:justify-end"
+                    >
+                        <a
+                            href="./services.html"
+                            target="_self"
+                            class="text-white uppercase font-semibold"
+                        >
+                            Services
+                            <i
+                                class="fa-solid fa-chevron-down text-light-green pl-2"
+                            ></i
+                        ></a>
+                        <a
+                            href="./our-work"
+                            target="_self"
+                            class="text-white uppercase font-semibold"
+                            >Our Work</a
+                        >
+                        <a
+                            href="./blog.html"
+                            target="_self"
+                            class="text-white uppercase font-semibold"
+                            >Blog</a
+                        >
+                        <a
+                            href="./contact.html"
+                            target="_self"
+                            class="text-white uppercase font-semibold"
+                            >Contact</a
+                        >
+                    </div>
+
+                    <div class="w-full lg:w-1/6 flex lg:justify-end">
+                        <a href="/contact" target="_self" class="solid-button">
+                            Get a quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get a quote widget -->
+        <div class="fixed right-0 top-1/2 -translate-y-1/2 z-50">
+            <div
+                class="w-11 rounded-l-md bg-light-green py-6 px-2 flex items-center justify-center z-50"
+            >
+                <span
+                    class="uppercase [writing-mode:vertical-rl] transform rotate-180 font-semibold"
+                >
+                    Get a quote
+                </span>
+            </div>
+
+            <!-- scroll up widget -->
+            <div
+                class="js-scroll-up w-11 rounded-l-md bg-light-green p-2 flex items-center justify-center z-50 mt-14 cursor-pointer"
+            >
+                <img src="./src/assets/images/cheveron-up.svg" alt="Chevron" />
+            </div>
+        </div>
+
+        <!-- Hero section -->
+        <section
+            class="relative"
+            style="
+                background-image: url('./src/assets/images/hero/vehicle-hero.jpg');
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+                height: 100%;
+            "
+        >
+            <div
+                class="absolute top-0 left-0 w-full h-full bg-dark-green/90 z-[1] mix-blend-multiply"
+            ></div>
+
+            <div
+                class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-dark-green z-[2]"
+            ></div>
+
+            <div class="container">
+                <div
+                    class="pt-10 lg:pt-[100px] pb-10 lg:pb-[84px] relative z-10"
+                >
+                    <div class="w-full flex flex-col items-center relative">
+                        <h2
+                            class="text-light-green uppercase text-sm text-center tracking-[0.3em]"
+                        >
+                            VEHICLE BRANDING - GENERATING MORE REVENUE FOR YOUR
+                            BUSINESS
+                        </h2>
+
+                        <h1
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-center pt-10 lg:pt-14 lg:w-4/5 mx-auto"
+                        >
+                            <span class="text-white"
+                                >BE THE TALK OF THE TOWN WITH YOUR</span
+                            ><span class="text-light-green">
+                                VEHICLE BRANDED</span
+                            >
+                        </h1>
+
+                        <p
+                            class="text-white font-medium text-[22px] leading-[30px] text-center pt-10 lg:pt-[60px] lg:w-[57%]"
+                        >
+                            Invest in long-term growth! Vehicle branding
+                            delivers continuous, cost-effective advertising that
+                            drives sales for your business.
+                        </p>
+                    </div>
+
+                    <!-- Anchored link buttons -->
+                    <div
+                        class="flex flex-wrap gap-x-9 gap-y-6 pt-7 justify-center relative w-full lg:w-3/4 mx-auto"
+                    >
+                        <a href="#fleet-branding" class="outline-button"
+                            >FLEET BRANDING</a
+                        >
+
+                        <a href="#full-wraps" class="outline-button"
+                            >FULL WRAPS</a
+                        >
+
+                        <a href="#part-wraps" class="outline-button"
+                            >PART WRAPS</a
+                        >
+
+                        <a href="#signwriting" class="outline-button"
+                            >SIGNWRITING</a
+                        >
+
+                        <a href="#chapter-8" class="outline-button"
+                            >CHAPTER 8</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two column image and text - image left -->
+        <section class="bg-dark-green pb-10 lg:pb-20" id="fleet-branding">
+            <div class="container">
+                <div
+                    class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+                >
+                    <div
+                        class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                    >
+                        <img
+                            src="./src/assets/images/vehicle-branding/Ross Care_2-2.jpg"
+                            alt="brick wrap"
+                            class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                        />
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <h2
+                            class="text-light-green uppercase text-sm tracking-[0.3em] pb-8"
+                        >
+                            DISCOUNTS AVAILABLE
+                        </h2>
+                        <h2
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-white"
+                        >
+                            FLEET BRANDING
+                        </h2>
+
+                        <h3
+                            class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-light-green"
+                        >
+                            Imagine your brand on every road – that's the power
+                            of a branded fleet! Every vehicle becomes a mobile
+                            billboard reaching countless potential customers.
+                        </h3>
+
+                        <p class="text-white pt-10">
+                            At Brand Works we understand the importance of brand
+                            identity. Presenting a professional and cohesive
+                            image across your fleet is essential to stand out in
+                            today’s competitive market.<br /><br />
+                            Our Leeds based design team works closely with fleet
+                            managers and business owners. We produce cost
+                            effective, fleet graphics and vehicle livery
+                            solutions. Stand out from the crowd, with high
+                            impact fleet graphics designed and wrapped to
+                            attract potential customers.<br /><br />
+                            Let us help you make your mark while you’re on the
+                            move! If you have cars, vans, trucks, or arctic
+                            vehicles and would like to learn more. Then speak to
+                            our team of experienced professionals about our
+                            high-quality vehicle graphic services.
+                        </p>
+
+                        <div class="hidden lg:block pt-10">
+                            <a
+                                href="./contact"
+                                target="_self"
+                                class="solid-button-tall max-w-max"
+                            >
+                                START YOUR PROJECT
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two column image and text - image right -->
+        <section
+            class="bg-gradient-to-b from-dark-green from-0 via-dark-green via-70% to-white to-100% pt-10 pb-10 lg:pb-20"
+            id="full-wraps"
+        >
+            <div class="container">
+                <div
+                    class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+                >
+                    <div class="w-full lg:w-1/2">
+                        <h2
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-white"
+                        >
+                            FULL WRAPS
+                        </h2>
+
+                        <h3
+                            class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-light-green"
+                        >
+                            Tired of being a nobody on the road? A full vehicle
+                            wrap transforms your ride into a head-turning lead
+                            magnet, driving customers to your business!
+                        </h3>
+
+                        <p class="text-white pt-10">
+                            Forget ordinary. Our full vehicle wraps are designed
+                            to make a statement. We don't merely cover your
+                            vehicle, we craft a mobile work of art. From sleek
+                            color changes to eye-popping designs, our expert
+                            designers collaborate with you to bring your vision
+                            to life.<br /><br />
+                            Full wraps are an investment, but the rewards are
+                            undeniable. Our premium vinyl acts like a shield,
+                            safeguarding your original paint from everyday wear
+                            and tear. Scratches, chips, and fading become a
+                            thing of the past, keeping your vehicle looking
+                            showroom-fresh and maximizing its resale value.<br /><br />
+                            We're so confident in the quality of our materials
+                            and the meticulous work of our installers that every
+                            full wrap comes with a peace-of-mind 5-year
+                            warranty.
+                        </p>
+
+                        <div class="hidden lg:block pt-10">
+                            <a
+                                href="./contact"
+                                target="_self"
+                                class="solid-button-tall max-w-max"
+                            >
+                                REQUEST A QUOTE
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                    >
+                        <img
+                            src="./src/assets/images/vehicle-branding/Solar_Fast_Van.jpg"
+                            alt="Flying tiger"
+                            class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two column image and text - image left -->
+        <section class="pt-10 lg:pt-20 pb-10 lg:pb-20" id="part-wraps">
+            <div class="container">
+                <div
+                    class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+                >
+                    <div
+                        class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                    >
+                        <img
+                            src="./src/assets/images/vehicle-branding/Exsel_2.jpg"
+                            alt="Locker room"
+                            class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                        />
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <h2
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-light-green"
+                        >
+                            PART WRAPS
+                        </h2>
+
+                        <h3
+                            class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-dark-green"
+                        >
+                            Full wraps grab attention, but part wraps pack a
+                            punch! Stand out without breaking the bank.
+                        </h3>
+
+                        <p class="pt-10">
+                            Who says making a statement requires a full
+                            makeover? Our part vehicle wraps offer a
+                            budget-friendly way to transform your car and turn
+                            heads on the road.<br /><br />Don't underestimate
+                            their impact – a well-designed partial wrap can be
+                            just as eye-catching and effective as a full wrap,
+                            all at a fraction of the cost.<br /><br />
+                            Part wraps allow you to customize specific areas of
+                            your car, highlighting your favorite features or
+                            adding a splash of personality. From sleek roof
+                            wraps to bold hood graphics, the possibilities are
+                            endless. This flexibility makes them a popular
+                            choice for a reason – they cater to a wide range of
+                            budgets and design preferences.
+                        </p>
+
+                        <div class="hidden lg:block pt-10">
+                            <a
+                                href="./contact"
+                                target="_self"
+                                class="solid-button-tall max-w-max"
+                            >
+                                BOOK A DESIGN CONSULTATION
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two column image and text - image right -->
+        <section class="pt-10 pb-10 lg:pb-28" id="signwriting">
+            <div class="container">
+                <div
+                    class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+                >
+                    <div class="w-full lg:w-1/2">
+                        <h2
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-light-green"
+                        >
+                            SIGNWRITING & PANEL INFILLS
+                        </h2>
+
+                        <h3
+                            class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-dark-green"
+                        >
+                            Impactful branding at a budget-friendly price. Get
+                            your message out there, the smart, simple and
+                            cost-effective way.
+                        </h3>
+
+                        <p class="text-dark-green pt-10">
+                            Unlike a full wrap that covers the entire vehicle,
+                            signwriting and infills allow for a more targeted
+                            approach. You can strategically place your branding
+                            on high-traffic areas of your vehicles, such as
+                            doors, hoods, and rear panels. This ensures your
+                            message gets maximum exposure in the areas most
+                            likely to be seen by potential customers, like
+                            during traffic stops or while parked in
+                            high-visibility locations.
+                        </p>
+
+                        <div class="hidden lg:block pt-10">
+                            <a
+                                href="./contact"
+                                target="_self"
+                                class="solid-button-tall max-w-max"
+                            >
+                                DRIVE MORE LEADS
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                    >
+                        <img
+                            src="./src/assets/images/vehicle-branding/Jason_Hitch_3.jpg"
+                            alt="Flying tiger"
+                            class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Return on investment section -->
+        <section class="py-10 lg:py-20 bg-dark-green">
+            <div class="container">
+                <h2
+                    class="w-full font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-center pb-10 lg:pb-20"
+                >
+                    <span class="text-light-green"
+                        >RETURN ON INVESTMENT<br
+                    /></span>
+                    <span class="text-white">OF VEHICLE BRANDING</span>
+                </h2>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+                >
+                    <div
+                        class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                    >
+                        <img
+                            src="./src/assets/images/investment-icons/pound-up.svg"
+                            alt="Pound increase"
+                            data-mh="icon"
+                        />
+
+                        <h3
+                            data-mh="title"
+                            class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                        >
+                            LEAD GENERATION AND SALES GROWTH
+                        </h3>
+
+                        <p
+                            data-mh="content"
+                            class="text-white text-center pt-6"
+                        >
+                            A branded vehicle with clear messaging can generate
+                            leads by prompting enquiries and website visits.
+                            Eye-catching graphics and a call to action can turn
+                            heads into paying customers.
+                        </p>
+                    </div>
+
+                    <div
+                        class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                    >
+                        <img
+                            src="./src/assets/images/investment-icons/person.svg"
+                            alt="Person"
+                            data-mh="icon"
+                        />
+
+                        <h3
+                            data-mh="title"
+                            class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                        >
+                            INCREASED BRAND AWARENESS
+                        </h3>
+
+                        <p
+                            class="text-white text-center pt-6"
+                            data-mh="content"
+                        >
+                            ye-catching vehicle graphics act as mobile
+                            billboards, constantly putting your brand in front
+                            of a wide audience. Studies show vehicle wraps can
+                            generate 30,000-70,000 impressions daily,
+                            significantly boosting brand recognition.
+                        </p>
+                    </div>
+
+                    <div
+                        class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                    >
+                        <img
+                            src="./src/assets/images/investment-icons/piggy-bank.svg"
+                            alt="Piggy bank"
+                            data-mh="icon"
+                        />
+
+                        <h3
+                            data-mh="title"
+                            class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                        >
+                            COST EFFECTIVE LONG TERM ADVERTISING
+                        </h3>
+
+                        <p
+                            data-mh="content"
+                            class="text-white text-center pt-6"
+                        >
+                            Compared to traditional advertising methods like
+                            billboards or TV commercials, vehicle branding
+                            offers a much lower cost per impression. The long
+                            lifespan of wraps (Up to 7 years) further extends
+                            the value, making it a highly cost-effective way to
+                            reach potential customers.
+                        </p>
+                    </div>
+
+                    <div
+                        class="col-span-1 border border-white rounded-[20px] flex flex-col items-center text-white p-6 lg:p-10"
+                    >
+                        <img
+                            src="./src/assets/images/investment-icons/merit.svg"
+                            alt="Merit"
+                            data-mh="icon"
+                        />
+
+                        <h3
+                            data-mh="title"
+                            class="font-bold text-lg text-light-green leading-[26px] text-center pt-8"
+                        >
+                            IMPROVED BRAND CREDIBILITY
+                        </h3>
+
+                        <p
+                            data-mh="content"
+                            class="text-white text-center pt-6"
+                        >
+                            A professional and well-designed vehicle wrap
+                            signifies a company that takes pride in its image.
+                            This can build trust and credibility with potential
+                            customers, leading to a positive brand perception
+                            and ultimately, increased sales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two column image and text - image left -->
+        <section class="pt-10 pb-10 lg:pb-20" id="chapter-8">
+            <div class="container">
+                <div
+                    class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[60px] items-center"
+                >
+                    <div
+                        class="w-full lg:w-1/2 lg:min-h-[632px] rounded-[20px] overflow-hidden"
+                    >
+                        <img
+                            src="./src/assets/images/vehicle-branding/Morris_1.png"
+                            alt="Locker room"
+                            class="object-cover object-center w-full h-full lg:min-h-[632px]"
+                        />
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <h2
+                            class="font-bold uppercase text-[32px] leading-[35px] lg:leading-[65px] lg:text-[70px] text-light-green"
+                        >
+                            CHAPTER 8
+                        </h2>
+
+                        <h3
+                            class="font-medium text-[32px] leading-[35px] pt-8 lg:pt-11 text-dark-green"
+                        >
+                            We Ensure Your Vehicles Meet All Highway Regulations
+                        </h3>
+
+                        <p class="pt-10">
+                            We understand the importance of both brand
+                            visibility and road safety. That's why we offer
+                            expert installation of compliant chevron and Chapter
+                            8 kits alongside your custom vehicle graphics. These
+                            essential safety elements ensure your branded fleet
+                            adheres to Department of Transportation (DOT)
+                            regulations, preventing potential fines and keeping
+                            your drivers and others on the road safe and seen.
+                            <span class="block font-bold pt-2"
+                                >&#8226;&nbsp;Chevrons:</span
+                            >
+                            <span class="block ml-4"
+                                >These high-visibility markings are mandatory
+                                for wide vehicles exceeding a certain width.
+                                They enhance visibility during nighttime or
+                                low-light conditions, alerting other drivers to
+                                your presence.</span
+                            >
+                            <span class="block font-bold pt-2"
+                                >&#8226;&nbsp;Chapter 8 Kits:</span
+                            >
+                            <span class="block ml-4"
+                                >These reflective markings are required for
+                                oversized vehicles and specific types of cargo.
+                                They improve nighttime visibility, particularly
+                                the vehicle's width and length, ensuring safe
+                                operation on the road.</span
+                            >
+                        </p>
+
+                        <div class="hidden lg:block pt-10">
+                            <a
+                                href="./contact"
+                                target="_self"
+                                class="solid-button-tall max-w-max"
+                            >
+                                STAY LEGAL ON THE ROAD
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted by logos slider -->
+        <section class="pb-10 lg:pb-20">
+            <div class="container">
+                <div
+                    class="js-trusted-by-slider py-10 w-full flex justify-center"
+                >
+                    <div>
+                        <div class="flex justify-center items-center h-[126px]">
+                            <img
+                                src="./src/assets/images/vehicle-branding/accreditations/3M_wordmark.svg.png"
+                                alt="Asda"
+                                class="max-w-[216px] max-h-[126px] mx-auto"
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-center items-center h-[126px]">
+                            <img
+                                src="./src/assets/images/vehicle-branding/accreditations/arlon-logo.webp"
+                                alt="Asda"
+                                class="max-w-[216px] max-h-[126px] mx-auto"
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-center items-center h-[126px]">
+                            <img
+                                src="./src/assets/images/vehicle-branding/accreditations/1280px-Orafol_logo.svg.png"
+                                alt="Asda"
+                                class="max-w-[216px] max-h-[126px] mx-auto"
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-center items-center h-[126px]">
+                            <img
+                                src="./src/assets/images/vehicle-branding/accreditations/avery-dennison7859.logowik.com.webp"
+                                alt="Asda"
+                                class="max-w-[216px] max-h-[126px] mx-auto"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infinite marquee -->
+        <section class="bg-dark-green pt-14 lg:pt-20 pb-2 lg:pb-8">
+            <div
+                class="marquee relative w-full max-w-full h-[124px] lg:h-[160px] overflow-x-hidden"
+            >
+                <div
+                    class="track absolute whitespace-nowrap will-change-transform"
+                >
+                    <div class="content font-bold text-white flex items-center">
+                        <span class="text-[60px] lg:text-[80px]">DESIGN</span>
+                        <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                        <span class="text-[60px] lg:text-[80px]">PRINT</span>
+                        <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                        <span class="text-[60px] lg:text-[80px]">SIGNAGE</span>
+                        <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                        <span class="text-[60px] lg:text-[80px]"
+                            >VEHICLE BRANDING</span
+                        >
+                        <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                        <span class="text-[60px] lg:text-[80px]"
+                            >WINDOW GRAPHICS</span
+                        >
+                        <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                        <span class="ttext-[60px] lg:text-[80px]"
+                            >WALL MURALS</span
+                        >
+                        <i class="fa-solid fa-circle px-6 text-light-green"></i>
+                        <span class="ttext-[60px] lg:text-[80px]">DESIGN</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Autoplaying images section -->
+        <section>
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/3">
+                    <div class="min-h-[260px]">
+                        <img
+                            src="./src/assets/images/slider/farmer-copleys.jpg"
+                            alt="Farmer copleys"
+                            class="object-cover object-center w-full h-full min-h-[260px]"
+                        />
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3 hidden lg:block">
+                    <div class="min-h-[260px]">
+                        <img
+                            src="./src/assets/images/slider/showbar.png"
+                            alt="Showbar"
+                            class="object-cover object-center w-full h-full min-h-[260px]"
+                        />
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3 hidden lg:block">
+                    <div class="min-h-[260px]">
+                        <img
+                            src="./src/assets/images/slider/solarfast.jpg"
+                            alt="Solarfast"
+                            class="object-cover object-center w-full h-full min-h-[260px]"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section>
+            <div class="container">
+                <div
+                    class="flex flex-wrap lg:flex-nowrap pt-10 lg:pt-[70px] lg:justify-between lg:gap-5"
+                >
+                    <div class="w-full lg:w-auto">
+                        <img
+                            src="./src/assets/logo/Brand-slogan.svg"
+                            alt="Brand Works Logo"
+                            class="w-full max-w-[470px] h-auto"
+                        />
+                    </div>
+
+                    <div
+                        class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-40 text-sm w-full lg:w-auto mt-10 lg:mt-0"
+                    >
+                        <div class="flex flex-col gap-y-2 w-full lg:w-auto">
+                            <span class="font-bold text-dark-green"
+                                >OUR SERVICES</span
+                            >
+                            <a href="./vehicle-branding">Vehicle Branding</a>
+                            <a href="./print-and-display">Print & Display</a>
+                            <a href="./signage-and-branding"
+                                >Signage & Branding</a
+                            >
+                            <a href="./architectural-wrap">Achitectural Wrap</a>
+                            <a href="./events-and-exhibitions"
+                                >Events & Exhibitions</a
+                            >
+                        </div>
+
+                        <div class="flex flex-col gap-y-2 w-full lg:w-auto">
+                            <span class="font-bold text-dark-green">ABOUT</span>
+                            <a href="./sectors">Sectors We Serve</a>
+                            <a href="./our-work">Our Work</a>
+                            <a href="./contact">Contact</a>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <span class="block pb-2 font-bold text-dark-green"
+                                >GET IN TOUCH</span
+                            >
+                            Unit 17<br />
+                            Brand Works<br />
+                            The Idas<br />
+                            Leeds<br />
+                            West Yorkshire<br />
+                            LS10 1SP
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-end pb-10 pt-4">
+                    <div class="flex gap-4">
+                        <a
+                            href="https://www.facebook.com/districtsignco"
+                            target="_blank"
+                            class="flex items-center"
+                        >
+                            <i
+                                class="fa-brands fa-facebook text-dark-green text-lg"
+                            ></i>
+                        </a>
+
+                        <a
+                            href="https://www.instagram.com/brandworksuk/"
+                            target="_blank"
+                            class="flex items-center"
+                        >
+                            <i
+                                class="fa-brands fa-instagram text-dark-green text-xl"
+                            ></i>
+                        </a>
+
+                        <a
+                            href="https://uk.linkedin.com/company/brand.works"
+                            target="_blank"
+                            class="flex items-center"
+                        >
+                            <i
+                                class="fa-brands fa-linkedin text-dark-green text-xl"
+                            ></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-wrap items-center justify-between py-5 border-t border-dark-green"
+                >
+                    <div class="flex flex-col text-dark-green">
+                        <span class="block"
+                            >© Copyright Brand Works 2024. All rights
+                            reserved.</span
+                        >
+                        <span class="block text-xs mt-4 lg:mt-0"
+                            >Registered company in England and Wales. Brand
+                            Works, trading as Retail Creations Ltd. No
+                            10947829</span
+                        >
+                    </div>
+
+                    <div
+                        class="flex flex-wrap items-center gap-4 lg:gap-8 mt-4 lg:mt-0"
+                    >
+                        <a class="block w-full lg:w-auto" href="/"
+                            >Privacy Policy</a
+                        >
+                        <a class="block w-full lg:w-auto" href="/"
+                            >Terms Of Service</a
+                        >
+                        <a class="block w-full lg:w-auto" href="/"
+                            >Cookies Settings</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+        <script
+            type="text/javascript"
+            src="./src/js/accreditations.js"
+        ></script>
+        <script type="text/javascript" src="./src/js/trustedBy.js"></script>
+        <script type="text/javascript" src="./src/js/scrollUp.js"></script>
+    </body>
 </html>
