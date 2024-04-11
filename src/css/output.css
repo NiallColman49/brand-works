@@ -775,6 +775,10 @@ html {
   }
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -825,6 +829,18 @@ html {
 
 .top-\[104px\] {
   top: 104px;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.left-10 {
+  left: 2.5rem;
+}
+
+.right-10 {
+  right: 2.5rem;
 }
 
 .z-50 {
@@ -938,6 +954,10 @@ html {
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -1080,6 +1100,14 @@ html {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .grid-cols-1 {
@@ -1527,6 +1555,10 @@ html {
   padding-bottom: 0.25rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1614,6 +1646,14 @@ html {
 
 .leading-\[57px\] {
   line-height: 57px;
+}
+
+.leading-\[44px\] {
+  line-height: 44px;
+}
+
+.leading-\[48px\] {
+  line-height: 48px;
 }
 
 .tracking-\[0\.3em\] {
@@ -1898,6 +1938,16 @@ html {
     row-gap: 1.5rem;
   }
 
+  .lg\:rounded-l-2xl {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .lg\:rounded-r-2xl {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
   .lg\:p-10 {
     padding: 2.5rem;
   }
@@ -1929,6 +1979,11 @@ html {
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .lg\:pb-20 {
