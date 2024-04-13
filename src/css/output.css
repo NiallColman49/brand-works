@@ -996,6 +996,10 @@ html {
   height: 126px;
 }
 
+.h-\[132px\] {
+  height: 132px;
+}
+
 .max-h-11 {
   max-height: 2.75rem;
 }
@@ -1473,6 +1477,11 @@ html {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .pb-10 {

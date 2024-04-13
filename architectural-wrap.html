@@ -17,65 +17,375 @@
     </head>
 
     <body class="overflow-x-hidden">
-        <!-- Top cta section - light green with socials and contact details -->
-        <section class="bg-light-green py-2">
-            <div class="container">
-                <div
-                    class="flex flex-wrap items-center justify-between gap-4 lg:gap-0"
-                >
-                    <div class="hidden lg:flex gap-4">
-                        <a
-                            href="https://www.facebook.com/districtsignco"
-                            target="_blank"
-                            class="flex items-center"
-                        >
-                            <i
-                                class="fa-brands fa-facebook text-dark-green text-lg"
-                            ></i>
-                        </a>
+        <div class="z-50 shadow-lg shadow-[#000]/20 sticky top-0">
+            <!-- Top cta section - light green with socials and contact details -->
+            <section class="bg-light-green py-2">
+                <div class="container">
+                    <div
+                        class="flex flex-wrap items-center justify-between gap-4 lg:gap-0"
+                    >
+                        <div class="hidden lg:flex gap-4">
+                            <a
+                                href="https://www.facebook.com/districtsignco"
+                                target="_blank"
+                                class="flex items-center"
+                            >
+                                <i
+                                    class="fa-brands fa-facebook text-dark-green text-lg"
+                                ></i>
+                            </a>
 
-                        <a
-                            href="https://www.instagram.com/brandworksuk/"
-                            target="_blank"
-                            class="flex items-center"
-                        >
-                            <i
-                                class="fa-brands fa-instagram text-dark-green text-xl"
-                            ></i>
-                        </a>
+                            <a
+                                href="https://www.instagram.com/brandworksuk/"
+                                target="_blank"
+                                class="flex items-center"
+                            >
+                                <i
+                                    class="fa-brands fa-instagram text-dark-green text-xl"
+                                ></i>
+                            </a>
 
-                        <a
-                            href="https://uk.linkedin.com/company/brand.works"
-                            target="_blank"
-                            class="flex items-center"
-                        >
-                            <i
-                                class="fa-brands fa-linkedin text-dark-green text-xl"
-                            ></i>
-                        </a>
-                    </div>
+                            <a
+                                href="https://uk.linkedin.com/company/brand.works"
+                                target="_blank"
+                                class="flex items-center"
+                            >
+                                <i
+                                    class="fa-brands fa-linkedin text-dark-green text-xl"
+                                ></i>
+                            </a>
+                        </div>
 
-                    <div class="flex items-center gap-4">
-                        <a
-                            href="tel:0113 123 456"
-                            target="_self"
-                            class="flex gap-2 items-center text-dark-green"
-                        >
-                            <i class="fa-solid fa-phone"></i>
-                            <span class="pt-1">0113 123 456</span>
-                        </a>
-                        <a
-                            href="mailto:hello@brand-works.co.uk"
-                            target="_self"
-                            class="flex gap-2 items-center text-dark-green"
-                        >
-                            <i class="fa-solid fa-envelope"></i>
-                            <span class="pt-1">hello@brandworks.co.uk</span>
-                        </a>
+                        <div class="flex items-center gap-4">
+                            <a
+                                href="tel:0113 123 456"
+                                target="_self"
+                                class="flex gap-2 items-center text-dark-green"
+                            >
+                                <i class="fa-solid fa-phone"></i>
+                                <span class="pt-1">0113 123 456</span>
+                            </a>
+                            <a
+                                href="mailto:hello@brand-works.co.uk"
+                                target="_self"
+                                class="flex gap-2 items-center text-dark-green"
+                            >
+                                <i class="fa-solid fa-envelope"></i>
+                                <span class="pt-1">hello@brandworks.co.uk</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <!-- Main navigation with page links and logo -->
+            <section class="bg-dark-green py-4 hidden lg:block">
+                <div class="container relative">
+                    <div class="flex flex-wrap items-center lg:justify-between">
+                        <a href="/" class="w-full lg:w-1/3">
+                            <img
+                                src="./src/assets/logo/brand-works-logo.svg"
+                                alt="Brand Works Logo"
+                            />
+                        </a>
+
+                        <div
+                            class="w-full lg:w-1/2 flex gap-4 lg:gap-10 lg:justify-end"
+                        >
+                            <a
+                                href="javascript:;"
+                                target="_self"
+                                class="text-white uppercase font-semibold js-services-toggle flex items-center gap-4"
+                            >
+                                Services
+                                <i
+                                    class="fa-solid fa-chevron-down text-light-green -mt-1"
+                                ></i>
+                            </a>
+                            <a
+                                href="./our-work.html"
+                                target="_self"
+                                class="text-white uppercase font-semibold"
+                                >Our Work</a
+                            >
+
+                            <a
+                                href="./contact-us.html"
+                                target="_self"
+                                class="text-white uppercase font-semibold"
+                                >Contact</a
+                            >
+                        </div>
+
+                        <div class="w-full lg:w-1/6 flex lg:justify-end">
+                            <a
+                                href="/contact"
+                                target="_self"
+                                class="solid-button"
+                            >
+                                Get a quote
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute top-[104px] left-0 w-full bg-white rounded-b-lg js-mega-menu hidden px-16 py-10"
+                    >
+                        <div class="grid grid-cols-6 gap-4">
+                            <div class="col-span-1 flex flex-col space-y-2">
+                                <div
+                                    class="underline font-semibold"
+                                    data-mh="title"
+                                >
+                                    VEHICLE BRANDING
+                                </div>
+
+                                <img
+                                    src="./src/assets/images/our-work/Solar_Fast_Luton.jpeg"
+                                    alt="SL"
+                                    class="rounded-md h-[132px]"
+                                />
+
+                                <div class="flex flex-col gap-y-1 pt-1">
+                                    <a
+                                        href="/vehicle-branding.html#fleet-branding"
+                                        >Fleet branding</a
+                                    >
+
+                                    <a href="/vehicle-branding.html#full-wraps"
+                                        >Full wraps</a
+                                    >
+
+                                    <a href="/vehicle-branding.html#part-wraps"
+                                        >Part wraps</a
+                                    >
+
+                                    <a href="/vehicle-branding.html#signwriting"
+                                        >Signwriting</a
+                                    >
+
+                                    <a href="/vehicle-branding.html#chapter-8"
+                                        >Chapter 8</a
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="col-span-1 flex flex-col space-y-2">
+                                <div
+                                    class="underline font-semibold"
+                                    data-mh="title"
+                                >
+                                    PRINT & DISPLAY
+                                </div>
+
+                                <img
+                                    src="./src/assets/images/print-and-display/Farmer_Copleys_5.jpg"
+                                    alt="SL"
+                                    class="rounded-md h-[132px]"
+                                />
+
+                                <div class="flex flex-col gap-y-1 pt-1">
+                                    <a
+                                        href="/print-and-display.html#wall-graphics"
+                                        >Wall graphics</a
+                                    >
+
+                                    <a
+                                        href="/print-and-display.html#window-graphics"
+                                        >Window graphics</a
+                                    >
+
+                                    <a
+                                        href="/print-and-display.html#floor-graphics"
+                                        >Floor graphics</a
+                                    >
+
+                                    <a href="/print-and-display.html#hoardings"
+                                        >Hoardings</a
+                                    >
+
+                                    <a href="/print-and-display.html#display"
+                                        >Display</a
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="col-span-1 flex flex-col space-y-2">
+                                <div
+                                    class="underline font-semibold"
+                                    data-mh="title"
+                                >
+                                    SIGNAGE & BRANDING
+                                </div>
+
+                                <img
+                                    src="./src/assets/images/print-and-display/Farmer_Copleys_10.jpg"
+                                    alt="SL"
+                                    class="rounded-md h-[132px]"
+                                />
+
+                                <div class="flex flex-col gap-y-1 pt-1">
+                                    <a
+                                        href="/signage-and-branding.html#flat-panel-signs"
+                                        >Flat panel signs</a
+                                    >
+
+                                    <a
+                                        href="/signage-and-branding.html#tray-signs"
+                                        >Traysigns</a
+                                    >
+
+                                    <a
+                                        href="/signage-and-branding.html#cut-letters"
+                                        >Cut letters</a
+                                    >
+
+                                    <a
+                                        href="/signage-and-branding.html#built-up-letters"
+                                        >Built up letters</a
+                                    >
+
+                                    <a
+                                        href="/signage-and-branding.html#wayfinding"
+                                        >Wayfinding</a
+                                    >
+
+                                    <a
+                                        href="/signage-and-branding.html#pavement-signs"
+                                        >Pavement signs</a
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="col-span-1 flex flex-col space-y-2">
+                                <div
+                                    class="underline font-semibold"
+                                    data-mh="title"
+                                >
+                                    ARCHITECTURAL WRAP
+                                </div>
+
+                                <img
+                                    src="./src/assets/images/architectural-wrap/Coverstyl 1.jpg"
+                                    alt="SL"
+                                    class="rounded-md h-[132px]"
+                                />
+
+                                <div class="flex flex-col gap-y-1 pt-1">
+                                    <a href="/architectural-wraps.html#walls"
+                                        >Walls</a
+                                    >
+
+                                    <a href="/architectural-wraps.html#doors"
+                                        >Doors</a
+                                    >
+
+                                    <a
+                                        href="/architectural-wraps.html#lobbies-and-lifts"
+                                        >Lobbies & lifts</a
+                                    >
+
+                                    <a href="/architectural-wraps.html#ceilings"
+                                        >Ceilings</a
+                                    >
+
+                                    <a
+                                        href="/architectural-wraps.html#furniture"
+                                        >Furniture</a
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="col-span-1 flex flex-col space-y-2">
+                                <div
+                                    class="underline font-semibold"
+                                    data-mh="title"
+                                >
+                                    EVENTS & EXHIBITIONS
+                                </div>
+
+                                <img
+                                    src="./src/assets/images/events-and-exhibitions/Ikea flags (2).jpg"
+                                    alt="SL"
+                                    class="rounded-md h-[132px]"
+                                />
+
+                                <div class="flex flex-col gap-y-1 pt-1">
+                                    <a
+                                        href="/events-and-exhibitions.html#fabric-displays"
+                                        >Fabric displays</a
+                                    >
+
+                                    <a
+                                        href="/events-and-exhibitions.html#roller-banners"
+                                        >Roller banners</a
+                                    >
+
+                                    <a href="/events-and-exhibitions.html#flags"
+                                        >Flags</a
+                                    >
+
+                                    <a
+                                        href="/events-and-exhibitions.html#exibition-pop-ups"
+                                        >Exhibition pop ups</a
+                                    >
+
+                                    <a
+                                        href="/events-and-exhibitions.html#bollard-covers"
+                                        >Bollard covers</a
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="col-span-1 flex flex-col space-y-2">
+                                <div
+                                    class="underline font-semibold"
+                                    data-mh="title"
+                                >
+                                    SECTORS WE SERVE
+                                </div>
+
+                                <img
+                                    src="./src/assets/images/sectors-education.jpg"
+                                    alt="SL"
+                                    class="rounded-md h-[132px]"
+                                />
+
+                                <div class="flex flex-col gap-y-1 pt-1">
+                                    <a href="/sectors.html#commercial"
+                                        >Commercial</a
+                                    >
+
+                                    <a href="/sectors.html#retail">Retail</a>
+
+                                    <a href="/sectors.html#sport">Sport</a>
+
+                                    <a href="/sectors.html#exhibitions"
+                                        >Exhibitions</a
+                                    >
+
+                                    <a href="/sectors.html#healthcare"
+                                        >Healthcare</a
+                                    >
+
+                                    <a href="/sectors.html#education"
+                                        >Education</a
+                                    >
+
+                                    <a href="/sectors.html#hospitality"
+                                        >Hospitality</a
+                                    >
+
+                                    <a href="/sectors.html#construction"
+                                        >Construction</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
         <!-- Main navigation with page links and logo -->
         <section class="bg-dark-green py-4 hidden lg:block">
