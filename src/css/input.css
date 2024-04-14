@@ -48,12 +48,8 @@
         font-display: swap;
     }
 
-    body {
-        @apply overflow-x-hidden;
-    }
-
     html {
-        @apply overflow-x-hidden font-primary scroll-smooth text-dark-green;
+        @apply font-primary scroll-smooth text-dark-green;
     }
 
     .solid-button {
