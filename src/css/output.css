@@ -968,6 +968,10 @@ html {
   display: none;
 }
 
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
 .h-20 {
   height: 5rem;
 }
