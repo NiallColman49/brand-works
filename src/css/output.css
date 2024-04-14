@@ -1265,6 +1265,28 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#000\]\/20 {
+  background-color: rgb(0 0 0 / 0.2);
+}
+
+.bg-\[\#000\]\/30 {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+.bg-\[\#000\]\/40 {
+  background-color: rgb(0 0 0 / 0.4);
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
