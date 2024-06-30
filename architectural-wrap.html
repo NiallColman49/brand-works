@@ -471,14 +471,14 @@
         </section>
 
         <!-- Split image - to be turned into slider change -->
-        <section class="bg-dark-green pb-10 lg:pb-20">
+        <!-- <section class="bg-dark-green pb-10 lg:pb-20">
             <div class="container">
                 <div
                     class="flex flex-wrap lg:rounded-r-2xl lg:rounded-l-2xl overflow-hidden"
                 >
                     <div class="w-full lg:w-1/2 relative">
                         <img
-                            src="./src/assets/images/architectural-wrap/Rectangle 4270.png"
+                            src="./src/assets/images/architectural-wrap/Rectangle-4270.png"
                             alt="Part 1"
                             class="w-full h-full object-cover object-center"
                         />
@@ -490,7 +490,7 @@
                     </div>
                     <div class="w-full lg:w-1/2 relative">
                         <img
-                            src="./src/assets/images/architectural-wrap/Rectangle 4271.png"
+                            src="./src/assets/images/architectural-wrap/Rectangle-4271.png"
                             alt="Part 2"
                             class="w-full h-full object-cover object-center"
                         />
@@ -500,6 +500,26 @@
                             >After</span
                         >
                     </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Before/after slider -->
+        <section class="bg-dark-green pb-2 lg:pb-10">
+            <div class="container relative overflow-hidden max-h-[400px]">
+                <div id="comparison">
+                    <figure>
+                        <div id="handle"></div>
+                        <div id="divisor"></div>
+                    </figure>
+                    <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="50"
+                        id="slider"
+                        oninput="moveDivisor()"
+                    />
                 </div>
             </div>
         </section>
@@ -1110,5 +1130,6 @@
         <script src="./src/js/faqAccordion.js"></script>
         <script type="text/javascript" src="./src/js/trustedBy.js"></script>
         <script type="text/javascript" src="./src/js/scrollUp.js"></script>
+        <script src="./src/js/imageSliderReveal.js"></script>
     </body>
 </html>

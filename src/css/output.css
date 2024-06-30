@@ -908,10 +908,6 @@ html {
   margin-top: 2rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .block {
   display: block;
 }
@@ -960,24 +956,16 @@ html {
   height: 260px;
 }
 
+.h-\[330px\] {
+  height: 330px;
+}
+
 .h-auto {
   height: auto;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[550px\] {
-  height: 550px;
-}
-
-.h-\[390px\] {
-  height: 390px;
-}
-
-.h-\[330px\] {
-  height: 330px;
 }
 
 .max-h-11 {
@@ -988,12 +976,12 @@ html {
   max-height: 126px;
 }
 
-.max-h-\[300px\] {
-  max-height: 300px;
-}
-
 .max-h-\[330px\] {
   max-height: 330px;
+}
+
+.max-h-\[400px\] {
+  max-height: 400px;
 }
 
 .min-h-\[260px\] {
@@ -1616,6 +1604,128 @@ html {
   }
 }
 
+/* Image reveal slider */
+
+/* Our wrapper */
+
+#comparison {
+  max-width: 100%;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
+
+figure {
+  position: absolute;
+  background-image: url(/src/assets/images/architectural-wrap/Rectangle-4270.png);
+  background-size: cover;
+  font-size: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 400px;
+  margin: 0;
+}
+
+#divisor {
+  background-image: url(/src/assets/images/architectural-wrap/Rectangle-4271.png);
+  background-size: cover;
+  position: absolute;
+  width: 50%;
+  box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  height: 400px;
+  &::before,
+    &::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    width: 4px;
+    height: calc(50% - 25px);
+    background: white;
+    z-index: 3;
+  }
+  &::before {
+    top: 0;
+    box-shadow: 0 -3px 8px 1px rgba(0, 0, 0, 0.3);
+  }
+  &::after {
+    bottom: 0;
+    box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+#handle {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 1;
+  background: #c6d92c;
+  border-radius: 100%;
+  &::before,
+    &::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 6px inset transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    z-index: 9999;
+    background: #c6d92c;
+  }
+  &::before {
+    border-right: 6px solid white;
+    left: 50%;
+    margin-left: -17px;
+  }
+  &::after {
+    border-left: 6px solid white;
+    right: 50%;
+    margin-right: -17px;
+  }
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  top: 200px;
+  left: -25px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  width: calc(100% + 50px);
+  z-index: 2;
+  &:focus,
+    &:active {
+    border: none;
+    outline: none;
+  }
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+input[type='range']::-moz-range-track {
+  -moz-appearance: none;
+  height: 15px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  outline: none;
+}
+
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -1623,12 +1733,12 @@ html {
 }
 
 @media (min-width: 768px) {
-  .md\:h-\[416px\] {
-    height: 416px;
-  }
-
   .md\:h-\[330px\] {
     height: 330px;
+  }
+
+  .md\:h-\[416px\] {
+    height: 416px;
   }
 
   .md\:h-full {
@@ -1769,10 +1879,6 @@ html {
     flex-wrap: nowrap;
   }
 
-  .lg\:justify-start {
-    justify-content: flex-start;
-  }
-
   .lg\:justify-end {
     justify-content: flex-end;
   }
@@ -1793,6 +1899,10 @@ html {
     gap: 2.75rem;
   }
 
+  .lg\:gap-20 {
+    gap: 5rem;
+  }
+
   .lg\:gap-40 {
     gap: 10rem;
   }
@@ -1811,10 +1921,6 @@ html {
 
   .lg\:gap-\[60px\] {
     gap: 60px;
-  }
-
-  .lg\:gap-20 {
-    gap: 5rem;
   }
 
   .lg\:gap-y-6 {
@@ -1849,9 +1955,9 @@ html {
     padding-right: 2.75rem;
   }
 
-  .lg\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .lg\:py-11 {
@@ -1872,11 +1978,6 @@ html {
   .lg\:py-\[108px\] {
     padding-top: 108px;
     padding-bottom: 108px;
-  }
-
-  .lg\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
   .lg\:pb-20 {
@@ -1923,6 +2024,10 @@ html {
     padding-top: 3.5rem;
   }
 
+  .lg\:pt-16 {
+    padding-top: 4rem;
+  }
+
   .lg\:pt-20 {
     padding-top: 5rem;
   }
@@ -1947,8 +2052,8 @@ html {
     padding-top: 70px;
   }
 
-  .lg\:pt-16 {
-    padding-top: 4rem;
+  .lg\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .lg\:text-\[44px\] {
