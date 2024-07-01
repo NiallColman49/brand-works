@@ -839,6 +839,14 @@ html {
   top: 104px;
 }
 
+.-left-4 {
+  left: -1rem;
+}
+
+.-right-4 {
+  right: -1rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -876,6 +884,16 @@ html {
   margin-right: auto;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .-ml-4 {
   margin-left: -1rem;
 }
@@ -906,6 +924,14 @@ html {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.-ml-2 {
+  margin-left: -0.5rem;
+}
+
+.-ml-1 {
+  margin-left: -0.25rem;
 }
 
 .block {
@@ -984,6 +1010,14 @@ html {
   max-height: 400px;
 }
 
+.max-h-\[108px\] {
+  max-height: 108px;
+}
+
+.max-h-\[62px\] {
+  max-height: 62px;
+}
+
 .min-h-\[260px\] {
   min-height: 260px;
 }
@@ -1002,6 +1036,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[130px\] {
+  width: 130px;
 }
 
 .max-w-14 {
@@ -1027,6 +1065,10 @@ html {
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.max-w-\[130px\] {
+  max-width: 130px;
 }
 
 .-translate-x-1\/2 {
@@ -1201,6 +1243,10 @@ html {
   border-radius: 0.75rem;
 }
 
+.rounded-\[50px\] {
+  border-radius: 50px;
+}
+
 .rounded-b-lg {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -1236,6 +1282,11 @@ html {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-\[\#17585C\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(23 88 92 / var(--tw-border-opacity));
 }
 
 .bg-\[\#000\]\/40 {
@@ -1307,6 +1358,11 @@ html {
   --tw-gradient-to-position: 100%;
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1376,6 +1432,11 @@ html {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .pb-10 {
@@ -1819,6 +1880,10 @@ input[type='range']::-moz-range-track {
     height: 390px;
   }
 
+  .lg\:h-\[146px\] {
+    height: 146px;
+  }
+
   .lg\:min-h-\[632px\] {
     min-height: 632px;
   }
@@ -1873,6 +1938,10 @@ input[type='range']::-moz-range-track {
 
   .lg\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .lg\:flex-nowrap {
