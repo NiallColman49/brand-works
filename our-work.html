@@ -418,7 +418,8 @@
 
         <!-- Image gallery grid -->
         <section
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 bg-dark-green"
+            id="image-gallery"
         >
             <div class="col-span-1 overflow-hidden h-[260px] md:h-[416px]">
                 <img
@@ -581,6 +582,12 @@
             </div>
         </section>
 
+        <div
+            class="bg-dark-green py-10 lg:py-20 flex justify-center items-center"
+        >
+            <button id="load-more" class="outline-button">Load More</button>
+        </div>
+
         <!-- Footer -->
         <section>
             <div class="container">
@@ -709,5 +716,6 @@
         </section>
 
         <script type="text/javascript" src="./src/js/megamenu.js"></script>
+        <script type="text/javascript" src="./src/js/loadMore.js"></script>
     </body>
 </html>
