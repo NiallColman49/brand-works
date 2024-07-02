@@ -1658,7 +1658,7 @@ html {
 
 figure {
   position: absolute;
-  background-image: url(./src/assets/images/architectural-wrap/Rectangle-4270.png);
+  background-image: url('../assets/images/architectural-wrap/Rectangle-4270.png');
   background-size: cover;
   font-size: 0;
   max-width: 100%;
@@ -1668,7 +1668,7 @@ figure {
 }
 
 #divisor {
-  background-image: url(./src/assets/images/architectural-wrap/Rectangle-4271.png);
+  background-image: url('../assets/images/architectural-wrap/Rectangle-4271.png');
   background-size: cover;
   position: absolute;
   width: 50%;
