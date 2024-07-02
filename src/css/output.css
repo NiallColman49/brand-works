@@ -795,6 +795,14 @@ html {
   position: sticky;
 }
 
+.-left-3 {
+  left: -0.75rem;
+}
+
+.-right-3 {
+  right: -0.75rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -839,30 +847,6 @@ html {
   top: 104px;
 }
 
-.-left-4 {
-  left: -1rem;
-}
-
-.-right-4 {
-  right: -1rem;
-}
-
-.-left-2 {
-  left: -0.5rem;
-}
-
-.-right-2 {
-  right: -0.5rem;
-}
-
-.-left-3 {
-  left: -0.75rem;
-}
-
-.-right-3 {
-  right: -0.75rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -895,19 +879,14 @@ html {
   grid-column: span 4 / span 4;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .-ml-4 {
@@ -940,14 +919,6 @@ html {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.-ml-2 {
-  margin-left: -0.5rem;
-}
-
-.-ml-1 {
-  margin-left: -0.25rem;
 }
 
 .block {
@@ -1014,6 +985,10 @@ html {
   max-height: 2.75rem;
 }
 
+.max-h-\[108px\] {
+  max-height: 108px;
+}
+
 .max-h-\[126px\] {
   max-height: 126px;
 }
@@ -1024,10 +999,6 @@ html {
 
 .max-h-\[400px\] {
   max-height: 400px;
-}
-
-.max-h-\[108px\] {
-  max-height: 108px;
 }
 
 .max-h-\[62px\] {
@@ -1046,16 +1017,16 @@ html {
   width: 2.75rem;
 }
 
+.w-\[130px\] {
+  width: 130px;
+}
+
 .w-\[800px\] {
   width: 800px;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[130px\] {
-  width: 130px;
 }
 
 .max-w-14 {
@@ -1081,10 +1052,6 @@ html {
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
-}
-
-.max-w-\[130px\] {
-  max-width: 130px;
 }
 
 .-translate-x-1\/2 {
@@ -1251,16 +1218,16 @@ html {
   border-radius: 20px;
 }
 
+.rounded-\[50px\] {
+  border-radius: 50px;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-\[50px\] {
-  border-radius: 50px;
 }
 
 .rounded-b-lg {
@@ -1285,6 +1252,11 @@ html {
   border-top-width: 1px;
 }
 
+.border-\[\#17585C\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(23 88 92 / var(--tw-border-opacity));
+}
+
 .border-dark-green {
   --tw-border-opacity: 1;
   border-color: rgb(0 60 63 / var(--tw-border-opacity));
@@ -1298,11 +1270,6 @@ html {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-\[\#17585C\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(23 88 92 / var(--tw-border-opacity));
 }
 
 .bg-\[\#000\]\/40 {
@@ -1448,16 +1415,6 @@ html {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pb-10 {
@@ -1701,7 +1658,7 @@ html {
 
 figure {
   position: absolute;
-  background-image: url(/src/assets/images/architectural-wrap/Rectangle-4270.png);
+  background-image: url(./src/assets/images/architectural-wrap/Rectangle-4270.png);
   background-size: cover;
   font-size: 0;
   max-width: 100%;
@@ -1711,7 +1668,7 @@ figure {
 }
 
 #divisor {
-  background-image: url(/src/assets/images/architectural-wrap/Rectangle-4271.png);
+  background-image: url(./src/assets/images/architectural-wrap/Rectangle-4271.png);
   background-size: cover;
   position: absolute;
   width: 50%;
@@ -1908,16 +1865,16 @@ input[type='range']::-moz-range-track {
     display: flex;
   }
 
+  .lg\:h-\[146px\] {
+    height: 146px;
+  }
+
   .lg\:h-\[160px\] {
     height: 160px;
   }
 
   .lg\:h-\[390px\] {
     height: 390px;
-  }
-
-  .lg\:h-\[146px\] {
-    height: 146px;
   }
 
   .lg\:min-h-\[632px\] {
@@ -1974,10 +1931,6 @@ input[type='range']::-moz-range-track {
 
   .lg\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:flex-wrap {
-    flex-wrap: wrap;
   }
 
   .lg\:flex-nowrap {
@@ -2085,6 +2038,10 @@ input[type='range']::-moz-range-track {
     padding-bottom: 108px;
   }
 
+  .lg\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
   .lg\:pb-20 {
     padding-bottom: 5rem;
   }
@@ -2155,10 +2112,6 @@ input[type='range']::-moz-range-track {
 
   .lg\:pt-\[70px\] {
     padding-top: 70px;
-  }
-
-  .lg\:pb-10 {
-    padding-bottom: 2.5rem;
   }
 
   .lg\:text-\[44px\] {
