@@ -847,6 +847,22 @@ html {
   right: -1rem;
 }
 
+.-left-2 {
+  left: -0.5rem;
+}
+
+.-right-2 {
+  right: -0.5rem;
+}
+
+.-left-3 {
+  left: -0.75rem;
+}
+
+.-right-3 {
+  right: -0.75rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1439,6 +1455,11 @@ html {
   padding-right: 5rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1791,6 +1812,21 @@ input[type='range']::-moz-range-track {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 640px) {
+  .sm\:-left-4 {
+    left: -1rem;
+  }
+
+  .sm\:-right-4 {
+    right: -1rem;
+  }
+
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
