@@ -985,6 +985,10 @@ html {
   height: 300px;
 }
 
+.h-\[176px\] {
+  height: 176px;
+}
+
 .max-h-11 {
   max-height: 2.75rem;
 }
